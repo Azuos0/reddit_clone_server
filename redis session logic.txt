@@ -1,0 +1,19 @@
+1
+session:teste -> {userId: 1}
+
+2
+express-session will set a cookie on my browser quewrweur912823123=0jsdaskd
+
+3
+when user makes a request
+quewrweur912823123 -> sent to server
+
+4
+decrypt the cookie
+quewrweur912823123 -> session:teste
+
+5
+make a request to redis
+session:teste -> {userId: 1}
+
+req.session = {userId: 1}
